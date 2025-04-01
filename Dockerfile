@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 RUN git clone git@github.com:vinyferrero/server.git .
 
 # Install any additional dependencies if needed
-# RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Final stage to create a minimal image
 FROM python:3.9-slim
