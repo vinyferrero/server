@@ -2,7 +2,7 @@ import redis
 import time
 
 # Connect to Redis server
-r = redis.Redis(host='redis', port=6380, db=0)
+r = redis.Redis(host='redis', port=6379, db=0)
 
 # Channel names
 ping_channel = 'ping-channel'
