@@ -14,6 +14,8 @@ ping_counter = 0
 pubsub = r.pubsub()
 pubsub.subscribe(pong_channel)
 
+time.sleep(10)
+
 while True:
     # Increment the ping counter
     ping_counter += 1
